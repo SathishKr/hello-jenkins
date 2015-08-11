@@ -1,4 +1,5 @@
 call npm install
-call D:\DevArea\NodeCI\hello-jenkins\node_modules\.bin\mocha D:\DevArea\NodeCI\hello-jenkins\test\test.js
-call forever stopall
-call forever start app.js
+call npm install -S forever
+call ./node_modules/.bin/mocha ./test/test.js
+call ./node_modules/.bin/forever stopall
+call ./node_modules/.bin/forever start app.js
